@@ -23,79 +23,641 @@
 </head>
 <body>
 <h1>Basil Dragon — Privacy Policy</h1>
-<p class="meta">
-  <strong>Effective date:</strong> 16 July 2026 &middot;
-  <strong>App:</strong> Basil Dragon (<code>com.basildragon.app</code>) &middot;
-  <strong>Publisher:</strong> Basil Dragon &middot;
-  <strong>Contact:</strong> <a href="mailto:waterseller@gmail.com">waterseller@gmail.com</a>
-</p>
 
-<p class="lede">Basil Dragon helps you track your groceries and reduce waste. To do
-that it reads photos of your receipts and your fridge/pantry using AI, and keeps an
-approximate list of what you have. We designed it to hold as little as possible:</p>
+<p><strong>Effective date:</strong> 2026-07-16
+<strong>Last updated:</strong> 2026-10-12 (planning your week: how its estimated cost uses this week&rsquo;s flyer prices, your own receipts and typical prices pooled from other kitchens' receipts, that your confirmed receipts contribute to those pooled prices, and that a week plan sends this week&rsquo;s flyer lines for your chosen regions to Google; hiding a flyer deal with &ldquo;Not the same item&rdquo;, which we remember for your kitchen; after you confirm a receipt, our own code compares its lines with flyer deals in your chosen regions to show when you paid the flyer price; the flyer regions you can pick, and how we show public flyer deals for items you put on your shopping list — and that a connected AI assistant approved in app 0.1.34 or later can see your flyer regions and those deals; the approximate location — city or region, and internet provider — that we work out from your IP address for support and service analytics; short shopping notes on list items, which a connected AI assistant approved in app 0.1.34 or later can see and add, and which are deleted once the item is bought or removed; occasional messages from the Basil Dragon team, delivered by Expo and Google Firebase Cloud Messaging, and the push-notification address they need; fridge/pantry and shelf photos are now also checked against your kitchen list — a snapshot of your tracked items goes to Google with the photo, and the result keeps your list fresh and measures how accurate our predictions are; the free plan&rsquo;s item limit raised from 50 to 75; the shared shopping cart; who publishes Basil Dragon and how to reach the person in charge of personal information; that a connected AI assistant approved in app 0.1.34 or later can read your kitchen profile — diet, allergies and household size — while AI processing is on; that RevenueCat receives your kitchen&rsquo;s pseudonymous identifier when the app starts, even on the free plan; the separate ask before shopping-list suggestions use your kitchen profile; what receipts and price records hold, and what happens to them when you delete your account; how to have an old kitchen you can no longer open deleted; the free plan&rsquo;s item limit and what counts as an item; the free plan&rsquo;s monthly and one-time AI limits; Basil Dragon Plus is billed monthly or yearly; connected AI assistants can mark items used up or running low and check off the shopping list; each kitchen action records which member or member&rsquo;s assistant did it)
+<strong>App:</strong> Basil Dragon (<code>com.basildragon.app</code>)
+<strong>Publisher:</strong> Token Soup Media, the enterprise that makes and runs Basil Dragon
+<strong>Person in charge of the protection of personal information:</strong> the founder of Token Soup Media
+<strong>Contact (privacy questions, access, correction and deletion requests):</strong> tokensoupmedia@gmail.com</p>
+
+<h2>Summary (plain language)</h2>
+
+<p>Basil Dragon helps you track your groceries and reduce waste. To do that it reads
+photos of your receipts and your fridge/pantry using AI, and keeps an approximate
+list of what you have. We designed it to hold as little as possible:</p>
+
 <ul>
-  <li><strong>Your photos are processed, not stored.</strong> Receipt and pantry
-    photos are sent to our AI providers to read them; we do not store the images.</li>
-  <li><strong>We do not sell your data</strong> and there is <strong>no advertising</strong>.</li>
-  <li><strong>Your data lives on servers in the United States.</strong></li>
-  <li><strong>You can export or delete everything</strong> at any time, from inside the app.</li>
+<li><strong>Your photos are processed, not stored.</strong> Receipt and pantry photos are sent to
+our AI providers to read them; we do not store the images.</li>
+<li><strong>We do not sell your data</strong> and there is <strong>no advertising</strong>.</li>
+<li><strong>Your data lives on servers in the United States.</strong></li>
+<li><strong>You can export or delete everything</strong> — in a shared kitchen, your own data — at any time, from inside the app.</li>
 </ul>
+
 
 <h2>What we collect and why</h2>
+
 <table>
-  <thead><tr><th>Data</th><th>Why</th><th>Stored?</th></tr></thead>
-  <tbody>
-    <tr><td><strong>Receipt photos</strong></td><td>Read line items to build your grocery list</td><td><strong>No</strong> — processed by AI, not stored</td></tr>
-    <tr><td><strong>Fridge/pantry &amp; shelf photos</strong></td><td>Detect what you have / reconcile your list</td><td><strong>No</strong> — processed by AI, not stored</td></tr>
-    <tr><td><strong>Grocery inventory</strong> (approximate 3-state: in / low / out; no quantities)</td><td>The core feature — knowing what's on hand</td><td>Yes (US)</td></tr>
-    <tr><td><strong>Receipt line items</strong> (product + price)</td><td>Build inventory and price history</td><td>Yes (US) — the image is not kept</td></tr>
-    <tr><td><strong>Your goal + optional free-text intent</strong> (e.g. "reduce waste")</td><td>Personalize your Daily Brief (you opt in)</td><td>Yes (US)</td></tr>
-    <tr><td><strong>In-app corrections/actions</strong> (e.g. "I used this")</td><td>Keep the list accurate</td><td>Yes (US)</td></tr>
-    <tr><td><strong>Account identifier + access token</strong></td><td>Sign-in-less household session security</td><td>Yes (US)</td></tr>
-  </tbody>
+<thead>
+<tr>
+<th> Data </th>
+<th> Why </th>
+<th> Stored? </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <strong>Receipt photos</strong> </td>
+<td> Read line items to build your grocery list </td>
+<td> <strong>No</strong> — processed by AI, not stored </td>
+</tr>
+<tr>
+<td> <strong>Fridge/pantry &amp; shelf photos</strong> </td>
+<td> Detect what you have, and check the photo against your kitchen list: a snapshot of your tracked items (product names and in / low / out) is sent to Google with the photo so the AI can tell which of them it sees. We use the result to keep your list current (items it confirms get their freshness refreshed) and to measure how accurate our predictions are </td>
+<td> <strong>No</strong> — the photo is processed by AI, not stored; the check&rsquo;s result (which tracked items were seen, and whether we had them right) is stored (US) </td>
+</tr>
+<tr>
+<td> <strong>Photos you send for your shopping list</strong> (a product, a shelf, an empty jar, or a shopping list or recipe <strong>you wrote yourself</strong>) </td>
+<td> Read what&rsquo;s in the picture so those items can be added to your shopping list </td>
+<td> <strong>No</strong> — processed by AI, not stored </td>
+</tr>
+<tr>
+<td> <strong>Grocery inventory</strong> (approximate 3-state: in / low / out; no quantities; plus a <strong>brand label</strong> when one is read off a photo or typed) </td>
+<td> The core feature — knowing what&rsquo;s on hand; sent to Google as a snapshot with every assistant chat turn so it can answer about your kitchen, and with every fridge/pantry or shelf photo so the AI can check which tracked items it sees (see the row above) </td>
+<td> Yes (US) </td>
+</tr>
+<tr>
+<td> <strong>Receipt details</strong> (each line&rsquo;s product and price paid, plus the quantity, unit and any discount or rebate printed on it; the store&rsquo;s name and address as printed; the purchase date and total) </td>
+<td> Build your inventory and your kitchen&rsquo;s price history; compare with public flyer deals you chose to see (see &ldquo;Flyer deals on your shopping list&rdquo; below); estimate what groceries cost, for you and, pooled with other kitchens' receipts, for others (see &ldquo;Price estimates&rdquo; below); the <strong>names</strong> of products you&rsquo;ve bought before (not the prices, store or dates) are sent to Google when you ask for shopping suggestions </td>
+<td> Yes (US) — the image is not kept; deleted with your account (see &ldquo;Your rights&rdquo;) </td>
+</tr>
+<tr>
+<td> <strong>Optional free-text about your kitchen</strong> (e.g. &ldquo;vegetarian, no peanuts, cooking for 4&rdquo;) </td>
+<td> Read once to pre-fill the kitchen profile below; you can skip it and tap the options instead (you opt in) </td>
+<td> Yes (US) </td>
+</tr>
+<tr>
+<td> <strong>Kitchen profile — dietary preferences</strong> (e.g. vegetarian, halal, gluten-free) </td>
+<td> Personalize recipes and suggestions; sent to Google with every assistant chat turn, and with shopping-list suggestions if you agreed to that use, so what we suggest respects them; readable by a connected AI assistant you approved in app 0.1.34 or later (see below) (you opt in; editable/removable in Settings) </td>
+<td> Yes (US) </td>
+</tr>
+<tr>
+<td> <strong>Kitchen profile — allergies</strong> (a fixed list — peanuts, tree nuts, dairy, eggs, gluten, shellfish, fish, soy, sesame — plus any allergy you type yourself) </td>
+<td> We use them to keep suggestions away from what you&rsquo;ve told us you can&rsquo;t eat — a best-effort filter, not a medical safety system (see below); sent to Google with every assistant chat turn, and with shopping-list suggestions if you agreed to that use; readable by a connected AI assistant you approved in app 0.1.34 or later (see below) (you opt in; editable/removable in Settings) </td>
+<td> Yes (US) </td>
+</tr>
+<tr>
+<td> <strong>Kitchen profile — household size</strong> (how many you cook for) </td>
+<td> Scale suggestions; sent to Google with every assistant chat turn, and with shopping-list suggestions if you agreed to that use; readable by a connected AI assistant you approved in app 0.1.34 or later (see below) (you opt in; editable/removable in Settings) </td>
+<td> Yes (US) </td>
+</tr>
+<tr>
+<td> <strong>What you&rsquo;ve bought before</strong> (the product names, worked out from your receipts and your own corrections — including things no longer in your kitchen) </td>
+<td> Suggest groceries worth adding to your list; the <strong>names</strong> are sent to Google when you ask for suggestions — never the prices, the store, or the dates </td>
+<td> Yes (US) — see receipt line items above </td>
+</tr>
+<tr>
+<td> <strong>In-app corrections/actions</strong> (e.g. &ldquo;I used this&rdquo;) </td>
+<td> Keep the list accurate </td>
+<td> Yes (US) </td>
+</tr>
+<tr>
+<td> <strong>Who did each kitchen action</strong> (since 2026-09-27: which member&rsquo;s seat, or which member&rsquo;s connected assistant, added, used up, restocked or checked off an item, put it in the shared cart, or marked the cart as bought with Done shopping — when you do, we keep a short Undo record of what changed for up to 48 hours, then delete it) </td>
+<td> So a shared kitchen can tell who changed what, and so an assistant&rsquo;s changes can be told apart from yours. No AI provider receives it </td>
+<td> Yes (US) — cleared when that member&rsquo;s seat is erased; included in that member&rsquo;s export, labelled <code>performed_by</code> (<code>you</code> / <code>your_assistant</code>) </td>
+</tr>
+<tr>
+<td> <strong>Account identifier + access token</strong> </td>
+<td> Sign-in-less household session security </td>
+<td> Yes (US) </td>
+</tr>
+<tr>
+<td> <strong>Your display name in a kitchen</strong> (free text you type — e.g. &ldquo;Sam&rdquo;, &ldquo;Mom&rdquo;, &ldquo;Chef Léo&rdquo;; optional, editable and clearable at any time) </td>
+<td> So housemates can tell who did what — it labels your seat for the other members of your kitchen, and for nobody else. No AI provider receives it </td>
+<td> Yes (US) — visible to the other members of the same kitchen; erased when you leave that kitchen </td>
+</tr>
+<tr>
+<td> <strong>Your kitchen&rsquo;s name</strong> (free text its owner types — e.g. &ldquo;The Tremblays&rdquo;, &ldquo;Apt 4B&rdquo;; optional) </td>
+<td> So housemates can tell who did what — it names the shared kitchen on the invite and join screens, so nobody joins the wrong one. No AI provider receives it </td>
+<td> Yes (US) — visible to the other members of the same kitchen </td>
+</tr>
+<tr>
+<td> <strong>App usage events</strong> (which screens you reach, whether a scan succeeded, how long it took) </td>
+<td> Understand what works and what breaks, so we can fix it </td>
+<td> Yes (US) </td>
+</tr>
+<tr>
+<td> <strong>Push-notification address for this phone</strong> (a token from Expo, plus your app language, your Messages-from-Basil-Dragon setting, how many reminders your phone showed each week (counts only), and a record of each team message sent to you) </td>
+<td> Sends occasional messages from the Basil Dragon team. Never sent to an AI provider </td>
+<td> Yes (US). Deleted when your seat ends or your account is deleted (abandoned kitchens: on purge). In your export, with the token shortened to its last 6 characters </td>
+</tr>
+<tr>
+<td> <strong>Flyer regions you pick</strong> (up to 3 store flyer areas you choose on the Shopping tab, e.g. &ldquo;IGA · Laval–North Shore&rdquo;; a store area you shop in, chosen from a list — not your location, never GPS, never your phone&rsquo;s location permission, never worked out from your IP address) </td>
+<td> Show public flyer deals from those regions under items on your shopping list — see &ldquo;Flyer deals on your shopping list&rdquo; below. Your regions themselves are never sent to an AI provider, but when you ask Basil Dragon to plan your week, this week&rsquo;s flyer lines from those regions are sent to Google (see &ldquo;Price estimates&rdquo; below), so your region may be inferable from them; shown, together with the matching deals, to a connected AI assistant you approved in app 0.1.34 or later (see &ldquo;Connected AI assistants&rdquo;) </td>
+<td> Yes (US) — change or clear it at any time; included in your export; deleted with your account. Kept separately from the approximate location below </td>
+</tr>
+<tr>
+<td> <strong>Your kitchen&rsquo;s saved week plan</strong> (since 2026-10-12: when you ask the assistant to plan your week, the plan it makes — dinner titles, short summaries, servings, cooking minutes, and ingredient names linked to items in your kitchen; never prices, totals or budgets) </td>
+<td> So you and everyone else in your kitchen can find this week&rsquo;s dinners again on the Chat and Kitchen tabs, and so the assistant can answer &ldquo;what was on the plan?&rdquo;. Sent to Google (Gemini) only on a turn where you ask for a plan or ask about the saved one </td>
+<td> Yes (US) — visible to every member of the same kitchen. Deleted 14 days after it was last saved, when anyone taps &ldquo;Clear this week&rdquo;, or when AI processing is declined for this kitchen; included in your data export; erased with the kitchen </td>
+</tr>
+<tr>
+<td> <strong>Approximate location</strong> (roughly where your connection comes from — a city or region and country — and which internet provider or network it belongs to, worked out from your phone&rsquo;s IP address; never GPS, never your phone&rsquo;s location permission) </td>
+<td> Support and service analytics: to find your kitchen when you write to us, and to tell real people&rsquo;s kitchens apart from automated test devices and our own test phones when we look at how the app is used. Never used for advertising, never sold, never sent to an AI provider for processing about you </td>
+<td> Not in our database. Your IP address is kept in our hosting provider&rsquo;s request logs (US); the approximate location is worked out when we look a kitchen up — see &ldquo;Your approximate location&rdquo; below </td>
+</tr>
+</tbody>
 </table>
-<p>We do <strong>not</strong> collect: your name, precise location, contacts,
-advertising IDs, or device fingerprints. The app contains <strong>no analytics or
-tracking SDK</strong> and <strong>no in-app purchases</strong> at this time.</p>
+
+
+<p>We do <strong>not</strong> collect: precise location, contacts, advertising IDs, or device
+fingerprints. (We do work out an <strong>approximate</strong> location from your IP address — see
+&ldquo;Your approximate location&rdquo; below.) (The flyer regions you pick are store areas you
+choose, not your location, and are kept apart from it.) There is no account: no email, no phone number, no address. The only
+name we hold is the one you choose to type for yourself inside a kitchen (see the
+two rows above) — you can leave it empty or clear it, and the app works the same
+either way. The app contains <strong>no third-party analytics or tracking SDK</strong>.</p>
+
+<p>We do record <strong>usage events of our own</strong> — which screen you reached, whether a scan
+succeeded and how long it took, whether a reply was useful — so we can tell what
+works and what breaks. These are counts and labels, never the contents of your
+kitchen: no product names, no prices, no receipt lines, nothing you typed. They are
+stored as ordinary events in your household, so they leave with your data when you
+export or delete it.</p>
+
+<p><strong>Your approximate location, from your IP address.</strong> Every time
+the app talks to our servers, your phone&rsquo;s IP address reaches our hosting provider
+(Railway, United States), which keeps it in its request logs together with the
+address of the request — and that address contains your kitchen&rsquo;s identifier. When
+we look up a kitchen (for example because you wrote to us, or to check whether a
+kitchen belongs to a real person or to an automated test device), we can match those
+logs to the kitchen and work out from the IP address roughly where the connection
+came from — a city or region and country — and which internet provider or network it
+belongs to. We do this with a geolocation database kept on our own computer: your IP
+address is not sent to any outside location service. We never use GPS or your
+phone&rsquo;s location permission (the app does not ask for it), and this is never precise
+enough to find a street address. We use it only for support and to understand how
+the service is used — never for advertising, and it is never sold.</p>
+
+<ul>
+<li><strong>How long:</strong> the request logs are kept by our hosting provider. In our experience
+they reach back about one month, but we have not yet confirmed the exact retention
+period with the provider. The approximate location is not saved in our database or
+in anything we publish. It can appear in our internal support notes — our working
+sessions, in which an AI assistant from Anthropic (United States) helps us as our
+service provider — and we have not yet set a retention period for those notes.</li>
+<li><strong>Choice:</strong> it is part of how the service works, so it cannot be turned off inside
+the app. Deleting your account removes your kitchen from our database, but does not
+erase our hosting provider&rsquo;s existing request logs before they expire. The data
+export (Settings → Export everything) covers our database and does not include these
+logs; to ask what they hold about you, email us (see Contact).</li>
+</ul>
+
+
+<p><strong>Flyer deals on your shopping list (since 2026-10-12).</strong> If you pick one or more
+flyer regions (up to 3), our servers compare your shopping list with the public flyer
+deals published for those regions and show a deal line under a matching item, for
+example &ldquo;Flyer at IGA · Laval: Lactantia 2 L, 4,99 $, until Wed&rdquo;. Flyers are public
+information we collect ourselves; a store never receives anything about you, nobody
+pays us to show a deal, and no deal is a recommendation.</p>
+
+<ul>
+<li><strong>Which items:</strong> only items a person in your kitchen put on the list. Items that
+landed there because Basil Dragon guessed they were running out, or that a
+connected assistant added, are not matched.</li>
+<li><strong>How:</strong> the match is done by our own code, not by an AI model, and your list never
+leaves our servers for it. (Separately, we use Google&rsquo;s AI to tie printed flyer
+lines to our product catalog; that step uses only the public flyer text and never
+sees any kitchen.)</li>
+<li><strong>What is stored:</strong> your chosen regions (see the table above). The deals themselves
+are public flyer facts, stored apart from the prices on your receipts, and never
+used for your usual price. After you confirm a receipt, our own code (no AI)
+compares its lines with flyer deals in your chosen regions to show when you paid
+the flyer price; we keep nothing from that comparison on our servers (the result
+stays in your chat, on your phone). The app records that a
+deal line was shown, tapped or hidden, without the product or the price.</li>
+<li><strong>Not the same item:</strong> if you hide a deal, we remember that for your kitchen (and
+which member did it) so it stays hidden for everyone in your kitchen and for
+connected assistants. It is in your export and deleted with your account.</li>
+<li><strong>Choice:</strong> it is off until you pick a region, and clearing your regions turns it
+off.</li>
+</ul>
+
+
+<p><strong>Price estimates (since 2026-10-12).</strong> When you ask Basil Dragon to plan your week,
+the plan comes with an estimated cost. For each item to buy, our own code uses, in
+order: the printed price from this week&rsquo;s flyers in the flyer regions you chose; the prices on your own confirmed receipts from the last 180 days; and,
+when neither exists, a typical price pooled from the confirmed receipts of at least 5
+other kitchens.</p>
+
+<ul>
+<li><strong>What goes to Google:</strong> your chat message (as with any assistant chat turn) and
+this week&rsquo;s printed flyer lines for your chosen regions: the store, the product
+and the printed price text. These lines are public flyer facts, but because they
+come from the regions you chose, your region may be inferable from them. The
+amounts from your receipts and the pooled prices are not sent to Google; our own
+code adds up the total.</li>
+<li><strong>Pooled prices are statistics.</strong> A pooled price is a typical (median) price
+worked out from at least 5 other kitchens' receipts. In a week plan it only ever
+appears inside a rounded total. Estimates for individual items may also use pooled
+prices; pooled prices never identify another kitchen, its stores, or when it
+shopped.</li>
+<li><strong>Your receipts count too:</strong> the prices on the receipts you confirm contribute to
+the pooled prices other kitchens see, in the same way. Receipt lines that our AI
+matched to an item on your shopping list are kept for your own price history but
+left out of pooled prices. When you delete your account, your price records are
+deleted and the pooled prices are recalculated without them (see &ldquo;Price records&rdquo;
+below).</li>
+</ul>
+
 
 <h2>AI processing (third parties)</h2>
+
 <p>To read photos and text, we send them to:</p>
+
 <ul>
-  <li><strong>Google</strong> (Gemini) — reads receipts and photos, extracts text/items.</li>
-  <li><strong>Anthropic</strong> (Claude) — used for harder cases.</li>
+<li><strong>Google</strong> (Gemini) — reads receipts and photos, extracts text/items; and, since
+2026-07-19, <strong>answers the messages you type in the assistant chat</strong> and, so its
+suggestions fit you, <strong>your saved kitchen profile (dietary preferences, allergies, and
+household size)</strong>. Since 2026-08-19 the same kitchen profile is also sent when you tap
+for <strong>shopping-list suggestions</strong>, if you agreed to that use (see below), together with what&rsquo;s in your kitchen and the
+<strong>names of products you&rsquo;ve bought before</strong> — including ones you no longer have — so the
+list it suggests fits your household rather than being generic. That request sends names
+only: not what you paid, not where you shopped, not when. You have to ask for it; nothing
+is sent unless you tap. The suggestions themselves are not saved on our servers — your
+phone keeps the last answer so the list is there when you come back, and a suggestion
+becomes part of your data only if you tap it onto your list. Chat messages are sent to Google to generate a reply and are <strong>not
+stored on our servers</strong> (no chat transcript is saved server-side; the one
+thing a chat can save is a week plan you ask for — see &ldquo;Your kitchen&rsquo;s saved week plan&rdquo; above). Since
+2026-08-11 your phone keeps the recent conversation — about the last 50
+messages — in the app&rsquo;s own storage, so it is still there when you come back.
+We keep no copy on our servers. Deleting your account in Settings erases it
+from the phone as well. If you use Android&rsquo;s own backup, your phone&rsquo;s backup
+may include it, like the rest of the app&rsquo;s data. Since 2026-08-06 there is
+one deliberate exception, and only with your tap: if you tell the assistant an
+allergy, a diet or how many people you cook for, it can offer to remember it, and
+confirming saves <strong>that value</strong> (not the message) to your kitchen profile, where you
+can edit or delete it in Settings; the kitchen profile is stored in
+your account and — since 2026-07-23 — sent to Google <strong>with every assistant chat
+turn</strong> (previously only when suggesting a recipe). Since 2026-07-20, <strong>product names</strong> (from
+your scans or manual adds) are also sent to Google <strong>once per catalog product</strong>, to
+<strong>match, name and illustrate</strong> the shared item catalog: to generate the small generic
+item picture shown in lists, to recognise when a newly seen product is one we already
+have, and to tidy up the stored product name (capitalisation, and the French or
+English version when only one was captured). The picture and the tidied name are
+shared by every user, contain no personal information (no people, text, or logos), and
+the result (not your name transmission) is what we store. Because a corrected name
+replaces the wording an item was first saved under, the name shown in your kitchen may
+change to a cleaner version of the same product; the product itself is never changed.
+Since 2026-10-12, when you ask the assistant to plan your week, this week&rsquo;s printed
+flyer lines for your chosen flyer regions are sent along with your message (see
+&ldquo;Price estimates&rdquo; above).</li>
+<li><strong>Anthropic</strong> (Claude) — used for harder cases.</li>
 </ul>
-<p>You are told this and asked to agree <strong>before your first upload</strong> (in
-the in-app consent screen). If you decline, the app runs in manual mode and no photos
-or text are sent for AI processing. Neither provider uses your content to train their
-models under our API terms, and the images are not retained by us.</p>
+
+
+<h2>Connected AI assistants (optional, since 2026-09-25)</h2>
+
+<p>You can connect an AI assistant of <strong>your</strong> choosing — for example Claude, Meta
+Muse, or any assistant that supports the Model Context Protocol (MCP) — to your
+kitchen, by entering a pairing code shown in the app. Nothing is shared until you
+do this. In a kitchen shared with other members, only the kitchen&rsquo;s <strong>owner</strong> can
+connect an assistant, and the connection shares the <strong>whole kitchen</strong> — including
+items other members added.</p>
+
+<ul>
+<li><strong>What the assistant can see:</strong> the items in your kitchen (name, category,
+in / low / out, days left, brand/variant label, size, where it&rsquo;s kept, expiry
+date) and your shopping list. An assistant connected from app 0.1.34 or later
+also sees, and can add, the short <strong>shopping notes</strong> you write on list items
+(for example &ldquo;x2, the big tub&rdquo;); a note is deleted as soon as the item is
+bought or removed, and we keep no history of it. Since 2026-09-27 it also receives how each item
+was first added (receipt, photo, by hand, or by an assistant) — never when —
+and, for items in the freezer, a general &ldquo;typically keeps for&rdquo; guide for that
+kind of food, which is a rough estimate, not a date.</li>
+<li><strong>Flyer deals (since 2026-10-12):</strong> an assistant approved in app 0.1.34 or
+later can also see the flyer regions your kitchen picked and the public flyer
+deals in them — by default only deals matching items a person put on your
+shopping list, and on request other deals from those regions (store, region,
+product, brand, size, printed price, any condition, and the last valid day).
+It cannot change your regions, and it is not shown deals your kitchen hid with
+&ldquo;Not the same item&rdquo;.</li>
+<li><strong>What it can do:</strong> manage your kitchen and shopping list — add items to your
+list, add items to your kitchen with details like size, where it&rsquo;s kept and
+expiry, and restock items you have (which takes them off your list). It can
+add a product Basil Dragon doesn&rsquo;t know yet: that product is then treated
+exactly like one found in a photo scan — our AI providers may tidy its name and
+draw its picture, and it becomes available to other kitchens' product search
+like every other catalog product. A connection can also use new features Basil
+Dragon adds later, without asking you again; connections made before
+2026-09-26 received these abilities automatically. The exceptions are marking
+items and reading your kitchen profile (below): each is available only to a
+connection approved with a consent text that described it.</li>
+<li><strong>Marking and checking off (since 2026-09-27):</strong> an assistant can also mark an
+item in your kitchen as used up or running low — only for connections approved
+with the full-access consent text (app 0.1.32 and later) — and check items off
+your shopping list, which marks them bought and restocks them in your kitchen.</li>
+<li><strong>Your shared cart (since 2026-10-01):</strong> the same connections (full-access
+consent text, app 0.1.32 and later) can also put an item from your shopping list
+in your kitchen&rsquo;s shared cart, or take it out. Every member of your kitchen sees
+that tick. It is not a purchase, and the assistant is never told who ticked an
+item or when.</li>
+<li><strong>Your kitchen profile (since app 0.1.34, 2026-09-27):</strong> a connection approved
+in app 0.1.34 or later — whose consent text says so — can also read the
+kitchen&rsquo;s saved <strong>dietary preferences, allergies and household size</strong>, and use
+them to suggest recipes from what you have. It can read them only while AI
+processing is turned on for the kitchen (in a shared kitchen, only while every
+member has agreed to it); when it is off, the assistant receives nothing from
+the profile and is told to ask you instead. Connections approved in earlier
+versions of the app cannot read the profile. Allergies are health information
+and a diet can reveal religious practice: once the assistant&rsquo;s company receives
+them, its own privacy policy governs them, and its suggestions are not a
+medical safety system — keep reading labels.</li>
+<li><strong>What it never receives:</strong> your receipts themselves (images, line items,
+store, prices or dates), prices, photos or chat history.</li>
+<li><strong>Who receives it:</strong> the company that runs the assistant you connected — you
+choose it, and its own privacy policy governs what it does with the data. That
+company is not our service provider and may process the data <strong>outside
+Québec and Canada</strong> (typically the United States). Your kitchen data goes from
+our servers directly to that assistant; it does not pass through anyone else.</li>
+<li><strong>Sign-in (WorkOS):</strong> we use <strong>WorkOS</strong> (United States) only to run the
+connection&rsquo;s sign-in step. WorkOS receives a random connection identifier and a
+made-up, undeliverable address (<code>&lt;identifier&gt;@connect.basildragon.invalid</code>) —
+never your name, your email or any kitchen data.</li>
+<li><strong>Seeing and disconnecting:</strong> every member of the kitchen can see its connections
+in Settings → Connected assistants, and <strong>any</strong> member can disconnect any of them
+at any time. A connection stays active when someone joins the kitchen; it is
+disconnected when the seat of the person who connected it is removed or when they
+delete their account. Data the assistant already received stays with its company.</li>
+<li><strong>Export:</strong> your connections (when each was made, which consent text was agreed
+to, when it was last used and when it was disconnected) are included in the data export
+(Settings → Export everything). Since 2026-09-27 the export also includes the kitchen
+actions recorded as done by you or by an assistant you connected, each labelled
+<code>performed_by</code> (<code>you</code> or <code>your_assistant</code>); the record of who did each action is cleared when your seat is erased.</li>
+</ul>
+
+
+<p><strong>Assistants IA connectés (facultatif, depuis le 2026-09-25).</strong> Vous pouvez
+connecter l'assistant IA de <strong>votre</strong> choix — par exemple Claude, Meta Muse ou tout
+assistant compatible avec le Model Context Protocol (MCP) — à votre cuisine, en
+entrant un code de jumelage affiché dans l'appli. Rien n'est partagé avant ça. Dans
+une cuisine partagée avec d'autres membres, seul le <strong>propriétaire de la cuisine</strong>
+peut connecter un assistant, et la connexion partage <strong>toute la cuisine</strong> — y
+compris les articles ajoutés par les autres membres.</p>
+
+<ul>
+<li><strong>Ce que l'assistant peut voir :</strong> les articles de votre cuisine (nom, catégorie,
+en stock / presque fini / probablement fini, jours restants, marque ou variante,
+format, rangement, date d'expiration) et votre liste d'épicerie.
+Un assistant connecté depuis l'appli 0.1.34 ou plus récente voit aussi, et peut
+ajouter, les courtes <strong>notes d'épicerie</strong> que vous écrivez sur les articles de
+votre liste (par exemple « x2, le gros pot »); une note est supprimée dès que
+l'article est acheté ou retiré, et nous n'en gardons aucun historique.</li>
+<li><strong>Comment chaque article a été ajouté (depuis le 2026-09-27) :</strong> il reçoit
+aussi la manière dont chaque article a été ajouté à l'origine (facture, photo,
+à la main ou par un assistant) — jamais quand — ainsi que, pour les articles
+au congélateur, une indication générale du temps de conservation habituel
+pour ce type d'aliment — une estimation approximative, pas une date.</li>
+<li><strong>Rabais des circulaires (depuis le 2026-10-12) :</strong> un assistant
+approuvé dans l'appli 0.1.34 ou plus récente voit aussi les régions de
+circulaires choisies pour votre cuisine et les rabais publics annoncés dans ces
+circulaires — par défaut, seulement celles qui correspondent à des articles
+qu'une personne a mis sur votre liste d'épicerie et, sur demande, les autres
+rabais de ces régions (magasin, région, produit, marque, format, prix
+imprimé, condition s'il y a lieu et dernier jour de validité). Il ne peut pas
+modifier vos régions, et il ne voit pas les rabais que votre cuisine a masqués
+avec « Ce n’est pas le même article ».</li>
+<li><p><strong>Ce qu'il peut faire :</strong> gérer votre cuisine et votre liste d'épicerie —
+ajouter des articles à votre liste, ajouter des articles à votre cuisine avec des
+détails comme le format, le rangement et l'expiration, et réapprovisionner des
+articles que vous avez (le réapprovisionnement les retire de votre liste). Il
+peut ajouter un produit inconnu de Basil Dragon : ce produit est alors traité
+exactement comme un produit trouvé par une photo — nos fournisseurs d'IA peuvent
+en nettoyer le nom et en dessiner l'image, et il devient accessible dans la
+recherche de produits des autres cuisines, comme tout autre produit du
+catalogue. Une connexion peut aussi utiliser les nouvelles fonctionnalités que
+Basil Dragon ajoutera plus tard, sans vous redemander; les connexions faites
+avant le 2026-09-26 ont reçu ces capacités automatiquement. Deux exceptions :
+marquer des articles et lire votre profil de cuisine (ci-dessous) ne sont
+offerts qu'à une connexion approuvée avec un texte de consentement qui les
+décrivait.</p></li>
+<li><p><strong>Marquer et cocher (depuis le 2026-09-27) :</strong> un assistant peut aussi
+marquer un article de votre cuisine comme probablement fini ou presque
+fini — seulement pour les connexions approuvées avec le texte de
+consentement à accès complet (appli 0.1.32 et plus récente) — et cocher
+des articles de votre liste d'épicerie, ce qui les marque comme achetés
+et les réapprovisionne dans votre cuisine.</p></li>
+<li><p><strong>Votre panier partagé (depuis le 2026-10-01) :</strong> ces mêmes connexions
+(texte de consentement à accès complet, appli 0.1.32 et plus récente)
+peuvent aussi mettre un article de votre liste d'épicerie dans le panier
+partagé de votre cuisine, ou l'en retirer. Tous les membres de votre
+cuisine voient cette coche. Ce n'est pas un achat, et l'assistant n'est
+jamais informé de qui a coché un article, ni quand.</p></li>
+<li><p><strong>Votre profil de cuisine (depuis l'appli 0.1.34, le 2026-09-27) :</strong> une
+connexion approuvée dans l'appli 0.1.34 ou plus récente — dont le texte de
+consentement le mentionne — peut aussi lire les <strong>préférences alimentaires,
+les allergies et le nombre de personnes pour qui vous cuisinez</strong> enregistrés
+pour la cuisine, et s'en servir pour suggérer des recettes avec ce que vous
+avez. Elle ne peut les lire que lorsque le traitement par IA est activé pour
+la cuisine (dans une cuisine partagée, seulement lorsque tous les membres y
+ont consenti); s'il est désactivé, l'assistant ne reçoit rien du profil et on
+lui dit de vous poser la question. Les connexions approuvées dans une version
+antérieure de l'appli ne peuvent pas lire le profil. Les allergies sont des
+renseignements sur la santé et un régime peut révéler une pratique religieuse :
+une fois reçus par l'entreprise de l'assistant, c'est sa propre politique de
+confidentialité qui s'applique, et ses suggestions ne sont pas un système de
+sécurité médicale — continuez de lire les étiquettes.</p></li>
+<li><p><strong>Ce qu'il ne reçoit jamais :</strong> vos factures elles-mêmes (images, lignes d'articles,
+magasin, prix ou dates), vos prix, vos photos ou votre historique de clavardage.</p></li>
+<li><strong>Qui reçoit les données :</strong> vos données de cuisine vont directement de nos
+serveurs à l'entreprise qui exploite l'assistant que vous avez choisi — elles ne
+transitent par personne d'autre. Cette entreprise n'est pas notre fournisseur de
+services ; sa propre politique de confidentialité s'applique, et elle peut
+traiter les données <strong>à l'extérieur du Québec et du Canada</strong> (généralement aux
+États-Unis).</li>
+<li><strong>Connexion (WorkOS) :</strong> nous utilisons <strong>WorkOS</strong> (États-Unis) uniquement pour
+l'étape de connexion : WorkOS reçoit un identifiant aléatoire et une adresse
+fictive impossible à livrer — jamais votre nom, votre courriel ni les données de
+votre cuisine.</li>
+<li><strong>Voir et déconnecter :</strong> tous les membres de la cuisine voient ses connexions
+dans Réglages → Assistants connectés, et <strong>n'importe quel</strong> membre peut en
+déconnecter une en tout temps. Une connexion reste active quand quelqu'un se joint
+à la cuisine ; elle est retirée si la place de la personne qui l'a créée est
+supprimée ou si cette personne supprime son compte. Les données déjà reçues par
+l'assistant restent avec son entreprise.</li>
+<li><p><strong>Exportation :</strong> vos connexions (date, texte de consentement accepté, dernière
+utilisation, déconnexion) figurent dans l'exportation de vos données (Réglages → Tout exporter).</p></li>
+<li><p><strong>Exportation (depuis le 2026-09-27) :</strong> l'exportation comprend aussi
+les actions faites dans votre cuisine par vous ou par un assistant que
+vous avez connecté, chacune étiquetée <code>performed_by</code> (<code>you</code> ou
+<code>your_assistant</code>) ; le registre de qui a fait chaque action est effacé
+quand votre place est supprimée.</p></li>
+</ul>
+
+
+<h2>Subscriptions and payments</h2>
+
+<p>Basil Dragon offers one optional paid plan, Basil Dragon Plus, billed by
+<strong>Google Play</strong> monthly or yearly (a subscription bought on the earlier
+3-month plan keeps renewing every three months). <strong>We never see or store your card number
+or any payment credential</strong> — Google Play collects and processes your payment
+directly. To manage the subscription (grant access after you buy, keep it
+active on renewal, remove access if you cancel), we use <strong>RevenueCat</strong> (United
+States), a subscription-management service. RevenueCat receives your
+household&rsquo;s identifier (the same pseudonymous identifier described above — not
+your name or email), which product you purchased, and the subscription&rsquo;s
+status from Google Play; it does not receive your card details. RevenueCat
+acts only on our behalf, under contract, to run the subscription — it does not
+use this information for its own advertising or resale.</p>
+
+<p>The free plan requires no purchase. Every copy of the app, on the free plan too,
+connects to RevenueCat when it starts and gives it your household&rsquo;s pseudonymous
+identifier, so that a purchase can be matched to your kitchen if you ever make
+one; RevenueCat&rsquo;s software also sends basic technical details such as the app
+version and the kind of device. Without a purchase, RevenueCat holds no
+subscription or payment information about you. Each
+calendar month, a free household can use up to 4 receipt scans, 10 photos and
+15 assistant chat messages; when one runs out, that feature pauses until the
+next month begins. Every free household also gets a modest, one-time allowance
+of AI use that does not renew; once it&rsquo;s used, AI features (scanning, photos,
+the assistant) pause until you subscribe. Either way, your saved kitchen, lists
+and past corrections, and adding items by hand, keep working (within the item
+limit), and nothing is ever deleted for not paying. A kitchen on the free plan
+can keep up to 75 items, and one on Basil Dragon Plus up to 500. Each separate
+entry counts as one item — a product together with its brand or label, so two
+brands of milk are two items; items in the kitchen and on the shopping list
+count together, and so do items a connected assistant adds. At
+the limit, only adding a new item is refused. If Basil Dragon Plus ends while a
+kitchen has more than 75 items, nothing is deleted and every existing item keeps
+working, but no new item can be added until the kitchen has fewer than 75 items
+or Basil Dragon Plus resumes.</p>
+
+<p><strong>Shared kitchens and Basil Dragon Plus.</strong> A kitchen includes its owner and one
+other member for free; adding a third person or more requires Basil Dragon Plus.
+If a kitchen isn&rsquo;t on Plus, the member who joined earliest keeps full access, and
+every other member&rsquo;s seat (except the owner&rsquo;s) is paused: nothing is deleted, and
+access comes back as soon as Plus is renewed — or automatically, for the
+next-earliest member, if the free member leaves or is removed. While paused, a
+member can still leave the kitchen, export or delete their data, withdraw their
+consent to AI processing, and see or disconnect connected assistants.</p>
+
+<p><strong>Cuisines partagées et Basil Dragon Plus.</strong> Une cuisine compte son propriétaire et une autre personne, gratuitement; en ajouter une troisième ou davantage nécessite Basil Dragon Plus. Si une cuisine n'a pas Plus, le membre qui l'a rejointe en premier garde un accès complet, et chaque autre membre, à l'exception du propriétaire, est mis en pause : rien n'est supprimé, et l'accès revient dès que l'abonnement Plus est renouvelé — ou automatiquement, pour le membre suivant par ordre d'ancienneté, si le membre gratuit quitte la cuisine ou en est retiré. Pendant cette pause, un membre peut quand même quitter la cuisine, exporter ou supprimer ses données, retirer son consentement au traitement par IA, et voir ou déconnecter les assistants connectés.</p>
+
+<p>You can cancel anytime from Google Play (Settings → Manage subscription in the
+app links there); a cancellation stops future billing but keeps your access
+until the period you already paid for ends. Deleting your account in the app
+does <strong>not</strong> cancel an active Google Play subscription — cancel it separately
+in Google Play, or it continues to bill.</p>
+
+<p>Your kitchen profile can indicate religious dietary rules (e.g. halal, kosher) or
+health information (your allergies, including any you type in your own words). We treat
+it as sensitive: we send it only to Google, only so that what the app suggests — the
+assistant&rsquo;s cooking help, recipe ideas, and the shopping-list suggestions — respects it,
+and never for ads or resale. Two other people or companies can see it, and only because
+of choices made in your kitchen: the other members of a shared kitchen, and a connected
+AI assistant approved in app 0.1.34 or later (see &ldquo;Connected AI assistants&rdquo; above). You can edit or clear every
+part of it in Settings at any time — and if you turn AI processing off, the profile stays
+there for you to clear rather than disappearing out of reach.</p>
+
+<p><strong>About the allergy filter, plainly.</strong> We do two things with the allergies you save: we
+tell the AI to avoid them, and — for the shopping suggestions — we also check the
+suggested product names ourselves and drop any that name an allergen you listed, in
+English or French. That second check is a real safeguard and it catches mistakes the AI
+makes. But it works on <strong>names</strong>, so it cannot see an allergen that is simply an
+ingredient of something: a dish or a prepared product whose name doesn&rsquo;t mention it can
+get through. Treat it as a <strong>best-effort filter, not a medical safety system</strong> — the same
+wording as our Terms — and keep reading labels. If you tell us about an allergy and
+something still slips past, that is a limitation we are naming here rather than a promise
+we broke.</p>
+
+<p>You are told this and asked to agree <strong>before your first upload</strong> (in-app consent
+screen), including that your typed chat messages are sent to Google. If you decline,
+the app runs in manual mode and no photos or text are sent for AI processing (the chat
+is unavailable). <strong>Shopping-list suggestions ask you separately</strong>, the first time you tap
+for them: whether your kitchen profile (dietary preferences, allergies and how many
+you cook for) may be sent to Google for that purpose. Agree and it is sent with your
+kitchen and the names of products you&rsquo;ve bought before. Decline and you still get
+suggestions, built from your kitchen and what you&rsquo;ve bought before alone — without
+your diet, your allergies or your household size. Your answer is recorded on our
+servers, and you can change it in Settings → Shopping suggestions. Shopping-list
+suggestions use AI, so they are not available while AI processing is off for your
+kitchen. Neither provider uses your content to train their models under our API
+terms, and the images/messages are not retained by us.</p>
+
+<h2>Messages from the Basil Dragon team (optional, since 2026-10-04)</h2>
+
+<p>Now and then the Basil Dragon team may send a short notification to your phone: a new
+feature, a fix, an outage, a policy change. These count toward the same limit as the
+app&rsquo;s reminders — never more than three notifications a week in all — and you can turn
+them off in Settings → Messages from Basil Dragon, or by turning off notifications for
+the app in your phone&rsquo;s settings.</p>
+
+<p><strong>Expo (650 Industries, Inc., USA)</strong> and <strong>Google Firebase Cloud Messaging (USA)</strong> deliver these messages. They see the push token and the message text. Messages never contain personal information about you.</p>
 
 <h2>Where your data is stored</h2>
-<p>Your account and grocery data are stored on servers in the <strong>United
-States</strong> (hosting: Railway; database: Supabase). If you are in Québec/Canada,
-this is a transfer outside your province/country. We are completing a privacy impact
-assessment of this transfer for adequate protection, as required under Québec Law 25.</p>
+
+<p>Your account and grocery data are stored on servers in the <strong>United States</strong>
+(hosting: Railway; database: Supabase). If you are in Québec/Canada, this is a
+transfer outside your province/country. We are completing a privacy impact
+assessment for transfers outside Québec, as Québec&rsquo;s Law 25 requires.</p>
 
 <h2>Your rights (Québec Law 25 / applicable law)</h2>
+
 <ul>
-  <li><strong>Access / portability</strong> — export all your data from the app (Settings → Export).</li>
-  <li><strong>Erasure</strong> — delete your account and all associated data from the app (Settings → Delete). Deletion cascades server-side and is not recoverable.</li>
-  <li>Both are protected by your household access token (a request without it is refused).</li>
+<li><strong>Access / portability</strong> — export all your data from the app (Settings → Export everything). In a shared kitchen, since 2026-09-27, this includes the kitchen actions recorded as done by you or by your connected assistant (<code>performed_by</code>).</li>
+<li><strong>Erasure</strong> — delete your account and all associated data from the app
+(Settings → Delete). Deletion cascades server-side and is not recoverable.</li>
+<li>Both are protected by your household access token (a request without it is refused).</li>
+<li><strong>Lost access to an old kitchen?</strong> If you reinstalled the app, cleared its data or
+changed phones and can no longer open a kitchen you used before, email
+tokensoupmedia@gmail.com and we will delete it for you. Tell us what you can to
+help us find it (for example the Support ID shown in Settings, if you noted it,
+and roughly when you set it up).</li>
+<li><strong>RevenueCat&rsquo;s copy.</strong> Deleting your account erases our records. RevenueCat&rsquo;s
+own record of your household&rsquo;s identifier, and of any purchase, is not
+guaranteed to be removed automatically — email us and we will have it deleted.</li>
 </ul>
-<p>De-identified, product-keyed reference data (e.g. that "IGA milk 2%" maps to a
-canonical product) may be retained after deletion because it contains no information
-about you.</p>
+
+
+<p>De-identified, product-keyed reference data may be retained after deletion
+because it contains no information about you. Today that is (updated
+2026-08-04): the mapping that a piece of product text refers to a canonical
+product — the text being <strong>raw receipt lines</strong> you approved (e.g. &ldquo;IGA milk
+2%&rdquo;), <strong>product names you typed</strong> when adding an item manually, or <strong>product
+names the AI read from a shelf photo</strong> you confirmed — and the <strong>names of
+stores</strong> as printed on receipts (a list of businesses, not of shoppers). These
+mappings never include chat messages (chat is not stored, above), quantities,
+prices you paid, or anything identifying; they are capped in length and hold
+product wording only.</p>
+
+<p><strong>Price records.</strong> Each price on a receipt you confirm is also kept as a price
+record: the product, the store it was bought at, the price paid, the quantity,
+unit and unit price, any discount, and the date. Since 2026-09-27 every price
+record is linked to the kitchen whose receipt it came from, is used for that
+kitchen&rsquo;s own price history, and is <strong>deleted with your account</strong>; we also keep
+per-store summaries computed from these records (counts and typical prices,
+with no kitchen identifier in them), which are recalculated when a kitchen&rsquo;s
+records are deleted. Price records made before 2026-09-27 carry no link to any
+kitchen (product, store chain, price and date only) and are kept after
+deletion. While your account exists, those older records could still
+be matched to your receipts internally (by store, date and price).</p>
 
 <h2>Children</h2>
+
 <p>Basil Dragon is not directed at children and does not knowingly collect data from
 children under the age required by local law.</p>
 
 <h2>Changes</h2>
-<p>We will update this policy as the app evolves (for example, if we later add
-analytics or subscriptions) and update the effective date. Material changes affecting
+
+<p>We will update this policy as the app evolves and update the &ldquo;Last updated&rdquo;
+date. Material changes affecting
 already-collected data will be surfaced in-app.</p>
 
 <h2>Contact</h2>
-<p>Questions about your privacy or this policy:
-<a href="mailto:waterseller@gmail.com">waterseller@gmail.com</a></p>
+
+<p>Token Soup Media — tokensoupmedia@gmail.com. This address is monitored, and it is
+also how to reach the person in charge of the protection of personal information
+(the founder of Token Soup Media) for any question, complaint, or request to
+access, correct or delete your information.</p>
+
+<p><strong>Responsable de la protection des renseignements personnels.</strong> L'application Basil
+Dragon est publiée par Token Soup Media. La personne responsable de la protection des
+renseignements personnels est le fondateur de Token Soup Media. Pour toute
+question, plainte ou demande d'accès, de rectification ou de suppression de vos
+renseignements personnels, écrivez à tokensoupmedia@gmail.com — cette adresse est
+consultée régulièrement.
+Vous avez perdu l'accès à une ancienne cuisine (appli réinstallée, données
+effacées, nouveau cellulaire)? Écrivez-nous et nous la supprimerons.</p>
 </body>
 </html>
