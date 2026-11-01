@@ -1,7 +1,7 @@
 ---
 name: legal-pages
 description: Maintains the public legal pages in basildragon-legal (a PUBLIC repo, a static index.html privacy policy). Re-renders it from the canonical policy text in the sibling product repo, keeps EN/FR versions in step, and checks the page never contradicts the canonical text. Invoke for "update the legal site", "regenerate the privacy page", "is the legal page stale", "add the French policy to the legal site". Never writes or rewords legal text itself — the product repo's policy is the source of truth and changes there go through compliance review. NOT for drafting policy wording (compliance-auditor reviews; the founder decides).
-tools: [Read, Write, Edit, Grep, Glob, Bash]
+tools: [Read, Write, Edit, Grep, Glob, Bash, mcp__savvy-progress__step]
 model: sonnet
 ---
 
